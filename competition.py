@@ -17,7 +17,7 @@ For running a TCP competition, consider the runcompetition.sh script
 """
 
 QUEUE=10
-DELAY='110ms'		# r--h3 link
+DELAY='0ms'		# r--h3 link
 BottleneckBW=8		# Mbit/sec
 BBR=False
 LOSS=5
