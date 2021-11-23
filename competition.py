@@ -20,6 +20,7 @@ QUEUE=10
 DELAY='110ms'		# r--h3 link
 BottleneckBW=8		# Mbit/sec
 BBR=False
+LOSS=1
 
 # reno-bbr parameters:
 if BBR:
@@ -79,7 +80,7 @@ class RTopo(Topo):
 
         self.addLink( h3, r, intfName1 = 'h3-eth', intfName2 = 'r-eth3', 
                  params2 = {'ip' : '10.0.3.1/24'}, 
-                 bw=BottleneckBW, delay=DELAY, queue=QUEUE) 	# apparently queue is IGNORED here.
+                 bw=BottleneckBW, delay=DELAY, queue=QUEUE, loss=LOSS) 	# apparently queue is IGNORED here.
 
 # delay is the ONE-WAY delay, and is applied only to traffic departing h3-eth.
 
