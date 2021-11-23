@@ -20,7 +20,7 @@ QUEUE=10
 DELAY='110ms'		# r--h3 link
 BottleneckBW=8		# Mbit/sec
 BBR=False
-LOSS=1
+LOSS=5
 
 # reno-bbr parameters:
 if BBR:
